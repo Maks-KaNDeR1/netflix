@@ -28,12 +28,13 @@ export const Banner = () => {
             return str.length > n ? str.substr(0, n - 1) + '...' : str
     }
 
+
     return (
         <header className="banner"
             style={{
                 backgroundSize: 'cover',
                 backgroundImage: `url(
-                    'https://image.tmdb.org/t/p/original/${movie.backdrop_path}'
+                    'https://image.tmdb.org/t/p/original/${movie.backdrop_path || movie.poster_path}'
                 )`,
                 backgroundPosition: 'center center'
             }}
@@ -41,8 +42,7 @@ export const Banner = () => {
             <div className="banner__contents">
 
                 <h1 className="banner__title">
-                    {movie.name || movie.original_name}
-                    {/* {movie?.title || movie?.name || movie?.original_name } */}
+                    {movie.original_name || movie.name || movie.title || movie.original_title}
                 </h1>
                 <div className="banner__buttons">
                     <button className="banner__button">  Play </button>
@@ -53,7 +53,6 @@ export const Banner = () => {
                     {truncate(movie.overview, 150)}
                 </h1>
             </div>
-
             <div className='banner__fadeBotton' />
         </header>
     )

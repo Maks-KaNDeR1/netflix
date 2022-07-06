@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import axios from '../../api/axios'
 import { MovieType } from '../../api/types';
 import './Row.css';
-import YouTube from 'react-youtube';
+import YouTube, { YouTubeProps } from 'react-youtube';
 import movieTrailer from 'movie-trailer';
+
+
 
 const base_url = 'https://image.tmdb.org/t/p/original/'
 
@@ -27,30 +29,35 @@ const Row: React.FC<PropsType> = ({ title, fetchUrl, isLargeRow }) => {
     fetchData()
   }, [fetchUrl]);
 
+
   const opts = {
     height: '390',
     width: '100%',
     playerVars: {
-      // https://developers.google.com/youtube/player_parameters
       autoplay: 1,
     },
   }
 
-  //https://www.youtube.com/watch?v=0DAmWHxeoKw&ab_channel=Netflix
   const handleClick = async (movie: MovieType) => {
+
+    let movieDate = (movie.first_air_date || movie.release_date)
+    console.log(Number(movieDate.slice(0, 4)))
+    let movieName = movie.original_name || movie.name || movie.title || movie.original_title
+    console.log(movieName)
+
     if (trailerUrl) {
-      console.log(trailerUrl)
       setTrailerUrl('')
     } else {
-      movieTrailer(movie.name || '')
+      movieTrailer(movieName)
         .then((url: any) => {
-          // https://wwww.youtube.com/watch?v=
+          if (!url) {
+            setTrailerUrl('https://www.youtube.com/watch?v=&ab_channel=YouTubeViewers')
+          }
           const urlParams = new URLSearchParams(new URL(url).search)
           setTrailerUrl(urlParams.get('v'))
         })
         .catch((err: any) => console.log(err))
     }
-
   }
 
   return (
