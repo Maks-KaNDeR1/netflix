@@ -1,15 +1,15 @@
 {
-  "main.css": "/netflix-clone/static/css/main.27cd8f38.chunk.css",
-  "main.js": "/netflix-clone/static/js/main.f0dfc55d.chunk.js",
-  "main.js.map": "/netflix-clone/static/js/main.f0dfc55d.chunk.js.map",
-  "runtime~main.js": "/netflix-clone/static/js/runtime~main.fbe2298b.js",
-  "runtime~main.js.map": "/netflix-clone/static/js/runtime~main.fbe2298b.js.map",
-  "static/js/2.149a551c.chunk.js": "/netflix-clone/static/js/2.149a551c.chunk.js",
-  "static/js/2.149a551c.chunk.js.map": "/netflix-clone/static/js/2.149a551c.chunk.js.map",
-  "static/js/3.dd5dca01.chunk.js": "/netflix-clone/static/js/3.dd5dca01.chunk.js",
-  "static/js/3.dd5dca01.chunk.js.map": "/netflix-clone/static/js/3.dd5dca01.chunk.js.map",
-  "index.html": "/netflix-clone/index.html",
-  "precache-manifest.d7a85ae4d2a01a1ffb7531100926153a.js": "/netflix-clone/precache-manifest.d7a85ae4d2a01a1ffb7531100926153a.js",
-  "service-worker.js": "/netflix-clone/service-worker.js",
-  "static/css/main.27cd8f38.chunk.css.map": "/netflix-clone/static/css/main.27cd8f38.chunk.css.map"
+  "main.css": "/netflix/static/css/main.2f292434.chunk.css",
+  "main.js": "/netflix/static/js/main.6bef953f.chunk.js",
+  "main.js.map": "/netflix/static/js/main.6bef953f.chunk.js.map",
+  "runtime~main.js": "/netflix/static/js/runtime~main.d473f2df.js",
+  "runtime~main.js.map": "/netflix/static/js/runtime~main.d473f2df.js.map",
+  "static/js/2.550a67dc.chunk.js": "/netflix/static/js/2.550a67dc.chunk.js",
+  "static/js/2.550a67dc.chunk.js.map": "/netflix/static/js/2.550a67dc.chunk.js.map",
+  "static/js/3.dd5dca01.chunk.js": "/netflix/static/js/3.dd5dca01.chunk.js",
+  "static/js/3.dd5dca01.chunk.js.map": "/netflix/static/js/3.dd5dca01.chunk.js.map",
+  "index.html": "/netflix/index.html",
+  "precache-manifest.d25b29b27e4e3b36429c3c9819ab0093.js": "/netflix/precache-manifest.d25b29b27e4e3b36429c3c9819ab0093.js",
+  "service-worker.js": "/netflix/service-worker.js",
+  "static/css/main.2f292434.chunk.css.map": "/netflix/static/css/main.2f292434.chunk.css.map"
 }
